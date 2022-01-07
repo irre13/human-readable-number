@@ -1,25 +1,5 @@
 module.exports = function toReadable (number) {
-  switch (number) {
-      case 0:
-          return "Zero";
-      case 1:
-          return "One";
-      case 2:
-          return "Two";
-      case 3:
-          return "Three";
-      case 4:
-          return "Four";
-      case 5:
-          return "Five";
-      case 6:
-          return "Six";
-      case 7:
-          return "Seven";
-      case 8:
-          return "Eight";
-      case 9:
-          return "Nine";
-
-  }
+  return number.toString().replace(/0/gi, "Zero").replace(/1/gi, "One").replace(/2/gi, "Two").replace(/3/gi, "Three")
+      .replace(/4/gi, "Four").replace(/5/gi, "Five").replace(/6/gi, "Six").replace(/7/gi, "Seven").replace(/8/gi, "Eight")
+      .replace(/9/gi, "Nine");
 };
